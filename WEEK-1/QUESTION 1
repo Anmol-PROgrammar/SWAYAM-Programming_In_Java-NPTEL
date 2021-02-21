@@ -1,0 +1,156 @@
+# Java Week 1:Q1 To find the perimeter and area of a circle given a value of radius.
+import java.util.Scanner;  
+public class Exercise1_1 {
+       public static void main(String[] args) {
+Scanner s = new Scanner(System.in); 
+       double radius= s.nextDouble();
+       double perimeter;
+       double area;
+//Calculate the perimeter 
+
+	perimeter = 2 * Math.PI * radius;
+//Calculate the area
+	area = perimeter * radius;
+	
+	System.out.println(perimeter);
+	System.out.println(area);
+	}
+}
+# Java Week 1:Q2 To find the largest among three numbers x, y, and z.
+import java.util.Scanner;  
+public class Exercise1_2 {
+      
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in); 
+        	int x = s.nextInt(); 
+        	int y = s.nextInt();
+		int z = s.nextInt();
+		int result = 0;
+		//Use if...else ladder to find the largest among 3 numbers and store the largest number in a variable called result.
+
+		if( x > y && x > z)
+		{
+			result = x;
+		}
+		else if( y > x && y > z)
+		{
+			result = y;
+		}
+		else if( z > y && z > x)
+		{
+			result = z;
+		}
+		else
+		{
+			result = x;
+		}
+
+		System.out.print(result);
+	}
+
+}
+# Java Week 1:Q3 Consider First n even numbers starting from zero(0) and calculate sum of all the numbers divisible by 3 from 0 to n. Print the sum.
+import java.util.Scanner;
+public class Exercise1_3 {
+       public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n=sc.nextInt();
+		int sum=0,t;
+ //Use for or while loop do the operation
+		for(int i=0;i<=n;i++)
+		{
+			t = 2*(i-1);
+			if(t%3 == 0)
+			{
+				sum += t;
+			}
+		}
+		System.out.println(sum);
+	}
+}
+# Java Week 1:Q4 To check whether the number is an Armstrong number or not.
+  
+import java.util.Scanner;
+public class Exercise1_4 {
+    public static void main(String[] args) {
+	   Scanner sc = new Scanner(System.in);
+	   int n=sc.nextInt();
+           int result=0;
+			//Use while loop check the number is Armstrong or not.
+			//store the output(1 or 0) in result variable
+		int remainder,temp,count=0,i;
+		temp=n;
+		while(temp!=0)
+		{
+			temp/=10;
+			count++;
+		}
+		i=count;
+		temp=n;
+		while(count>0)
+		{
+			remainder=temp%10;
+			result += Math.pow(remainder, i);
+			temp/=10;
+			count--;
+		}
+		if(n==result)
+			result=1;
+		else
+			result=0;
+
+		System.out.print(result);
+
+	}
+}
+# Java Week 1:Q5 To help Ram , find the highest mark and average mark secured by him in "s" number of subjects.
+import java.util.Scanner;
+public class Exercise1_5{
+    public static void main(String[] args) {
+	 Scanner input = new Scanner(System.in);
+         double mark_avg;
+         int result;
+         int i;
+         int s;
+      //define size of array
+       s = input.nextInt();
+     //The array is defined "arr" and inserted marks into it.
+      int[] arr = new int[s];   
+      
+	 for(i=0;i<arr.length;i++)
+	  {
+        	arr[i]=input.nextInt();
+	  } 
+ //Initialize maximum element as first element of the array.  
+   //Traverse array elements to get the current max.
+   //Store the highest mark in the variable result.
+   //Store average mark in mark_avg.
+	int temp=0,j;
+	
+ 	for(i=0; i < s; i++)
+	{  
+                for(j=1; j < (s-i); j++)
+		{  
+			if(arr[j-1] > arr[j])
+			{  
+                        	//swap elements  
+                        	temp = arr[j-1];  
+                                arr[j-1] = arr[j];  
+                                arr[j] = temp;  
+                        }       
+                 }  
+         } 
+	result=arr[s-1];
+	temp=0;
+	for(i=0;i<arr.length;i++)
+	{
+		temp +=arr[i];
+	}
+	mark_avg=temp/s;
+	
+	System.out.println(result);
+	System.out.print(mark_avg);
+
+
+	}
+}
