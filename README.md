@@ -3,6 +3,8 @@
 <p align ="center">
   <a href="#WEEK-1">WEEK-1</a>• <a href="#WEEK-2">WEEK-2</a>• <a href="#WEEK-3">WEEK-3</a>• <a href="#WEEK-4">WEEK-4</a>• <a href="#WEEK-5">WEEK-5</a>• <a href="#WEEK-6">WEEK-6</a>• <a href="#WEEK-7">WEEK-7</a>• <a href="#WEEK-8">WEEK-8</a>• <a href="#WEEK-9">WEEK-9</a>• <a href="#WEEK-10">WEEK-10</a>• <a href="#WEEK-11">WEEK-11</a>• <a href="#WEEK-12">WEEK-12</a> 
   
+  CLICK ON BRANCH AND THEN SELECT THE PARTICULAR WEEK WHOES SOLUTION YOU WANT TO ACCESS ACCORDINGLY 
+  
 # WEEK 1
 Java Week 1:Q1 To find the perimeter and area of a circle given a value of radius.
 
