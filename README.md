@@ -37,10 +37,10 @@ Java Week 6:Q4 Execution of two or more threads occurs in a random order. The ke
 
 Java Week 6:Q5 Add necessary codes to print the following:
 
------------------OUTPUT-------------------
+    -----------------OUTPUT-------------------
 
-Name of thread 't':Thread-0
+    Name of thread 't':Thread-0
 
-New name of thread 't':NPTEL
+    New name of thread 't':NPTEL
 
-Thread is running.
+    Thread is running.
