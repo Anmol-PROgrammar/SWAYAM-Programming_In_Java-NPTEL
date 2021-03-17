@@ -8,26 +8,26 @@ Java Week 4:Q2 To print the current year.
 
 Java Week 4:Q3 The program in this assignment is attempted to print the following output:
 
------------------OUTPUT-------------------
+    -----------------OUTPUT-------------------
 
-This is large
+    This is large
 
-This is medium
+    This is medium
 
-This is small
+    This is small
 
-This is extra-large
+    This is extra-large
 
------------------OUTPUT-------------------
+    -----------------OUTPUT-------------------
 
 Java Week 4:Q4 To call the default method in the interface First and Second.
 
 Java Week 4:Q5 To print the following output.
 
------------------OUTPUT-------------------
+    -----------------OUTPUT-------------------
 
-Circle: This is Shape1
+    Circle: This is Shape1
 
-Circle: This is Shape2
+    Circle: This is Shape2
 
------------------OUTPUT--------------------
+    -----------------OUTPUT--------------------
